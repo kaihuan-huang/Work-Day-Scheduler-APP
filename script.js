@@ -7,20 +7,17 @@ var saveButton = $('.saveBtn ');
 
 //create a function to handle save button
 function handleSaveButton(){
+    // var textInputEl = setAttribute("class",".text-input");
+    // var timeEl = setAttribute("class","hour");
     saveButton.on("click", function(){
           //get value from time-block's Input
-        // var textInputEl = setAttribute("class",".text-input");
-        // var timeEl = setAttribute("class","hour");
-        // var textInput = $(this).textInputEl.text();
-        // var time = $(this).timeEl.val();
-
         
+        var textInput = $(this).siblings(".input").text();
+        var time = $(this).parent().attr("id");
 
         console.log(textInput);
         console.log(time);
 
-
-        
         //save input in the local storage
         localStorage.setItem(time, textInput);
 
