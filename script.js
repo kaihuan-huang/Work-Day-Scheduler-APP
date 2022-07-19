@@ -32,7 +32,7 @@ function timeColor() {
 
     //get current hour
     var timeNow = moment().hours();
-    
+    // var timeNow = 12;
     console.log(timeNow);
     //loop over the time block
     $('.time-block').each(function () {
